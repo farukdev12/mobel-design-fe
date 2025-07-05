@@ -10,3 +10,12 @@
     --color-primary-header: #21211F;
     --color-primary-text: #56534D;
 }
+.swiper-pagination-bullet {
+    background-color:  white !important;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #8CA09B !important;
+    opacity: 1;
+}
