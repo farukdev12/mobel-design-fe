@@ -8,6 +8,8 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import {Button} from "@mui/material";
+import Image from "next/image";
+import brandLogo from '@images/brand-logo.svg'
 
 const MdHeader = () => {
     const [open, setOpen] = useState(false);
@@ -105,7 +107,7 @@ const MdHeader = () => {
                 }
             </div>
             <div className={'w-full !h-[84px] bg-secondary-back !text-primary-header container mx-auto px-4 flex items-center justify-between'}>
-                <h1 className={'text-2xl w-1/4'}>MobelDesign</h1>
+                <Image src={brandLogo} width={150} alt={'logo'}/>
                 <div className={'h-full relative flex justify-between items-center duration-100 w-2/4 !text-primary-header'}>
                     <div className={`absolute ${open ? 'block' : 'hidden'} h-1/2 duration-200 bg-secondary rounded-lg z-[1]`}
                          style={{width: `${referanceWidthForMenuItems}px`, left: `${itemLeftPosition}px`}}></div>
