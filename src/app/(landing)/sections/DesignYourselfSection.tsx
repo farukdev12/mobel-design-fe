@@ -37,8 +37,22 @@ const DesignYourselfSection = () => {
                         </div>
                     </div>
                 </div>
-                <p className={'w-1/2 text-center'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-                    animi aperiam autem cum dolorum eos esse ipsam iste itaque iure labore magni minus molestias odit omnis quibusdam, ratione sapiente ut, voluptatem? Accusamus aspernatur facere nisi pariatur rem totam ut.</p>
+                <div className={'w-full h-full flex flex-col gap-5 items-start justify-center'}>
+                    <h2 className={'text-2xl font-semibold text-center'}>Yakında Hizmetinizde: Kişiye Özel 3D Mobilya
+                        Tasarım Aracı</h2>
+                    <p className={'text-sm text-center text-black/70'}>
+                        Kişiselleştirilmiş mobilya üretiminde yeni bir dönem başlıyor.
+                        Üzerinde çalıştığımız 3D tasarım platformu sayesinde, yaşam alanınıza tam uyan mobilyaları kendi
+                        ölçülerinizle tasarlayabilecek, detaylarını dilediğiniz gibi şekillendirebileceksiniz.
+                    </p>
+                    <p className={'text-sm text-center text-black/70'}>
+                        Renk, malzeme ve model seçeneklerini anında değiştirerek, tasarımınızı gerçek zamanlı 3D önizleme ile görebileceksiniz. Böylece üretim öncesinde her ayrıntıyı gözden geçirip, hayalinizdeki mobilyayı tam olarak oluşturma imkânına sahip olacaksınız.
+                    </p>
+                    <p className={'text-sm text-center text-black/70'}>
+                        Henüz geliştirme aşamasında olan bu sistem, çok yakında hizmete açılacak.
+                        Kusursuz bir tasarım deneyimi için biz çalışmaya devam ediyoruz.
+                    </p>
+                </div>
             </div>
         </div>
     );
