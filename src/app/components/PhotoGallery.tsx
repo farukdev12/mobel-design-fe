@@ -62,6 +62,7 @@ const products: Product[] = [
 export default function Gallery() {
     const [open, setOpen] = useState(false);
     const [selected, setSelected] = useState<Product | null>(null);
+    const [activeSlideInside, setActiveSlideInside] = useState(0)
 
     const handleOpen = (product: Product) => {
         setSelected(product);
@@ -95,36 +96,53 @@ export default function Gallery() {
                 sx={(theme) => ({color: '#fff', zIndex: theme.zIndex.drawer + 1})}
                 open={open}
             >
-                <div className={'w-full h-full items-center justify-center flex gap-5 container mx-auto px-10 relative'}>
+                <div className={'w-full h-full items-center justify-center flex flex-col container mx-auto px-10 relative'}>
                     <X className={'absolute top-10 -right-2 text-5xl cursor-pointer'} color={'inherit'} onClick={handleClose} />
-                    <NavigateBeforeIcon className={'swiper-button-prev-custom !text-5xl'} color={'inherit'} />
-                    <Swiper
-                        modules={[Navigation]}
-                        className={'w-2/3 h-4/5 py-10'}
-                        spaceBetween={50}
-                        slidesPerView={1}
-                        navigation={{
-                            enabled: true,
-                            nextEl: '.swiper-button-next-custom',
-                            prevEl: '.swiper-button-prev-custom'
-                        }}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                    >
+                    <div className={'flex items-center justify-center gap-5 w-full h-1/2'}>
+                        <NavigateBeforeIcon className={'swiper-button-prev-custom !text-5xl'} color={'inherit'} />
+                        <Swiper
+                            modules={[Navigation]}
+                            className={'w-2/3 h-full py-10'}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            navigation={{
+                                enabled: true,
+                                nextEl: '.swiper-button-next-custom',
+                                prevEl: '.swiper-button-prev-custom'
+                            }}
+                            // onSlideChange={(e) => console.log('slide change', e)}
+                            onSlideChange={(e) => {setActiveSlideInside(e.activeIndex)}}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            {
+                                selected?.images.map((image, index) => (
+                                    <SwiperSlide key={index}>
+                                        <img
+                                            src={image}
+                                            alt={`${selected?.title}-${index}`}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition"
+                                        />
+                                    </SwiperSlide>
+                                ))
+                            }
+
+                        </Swiper>
+                        <NavigateNextIcon className={'swiper-button-next-custom !text-5xl'} color={'inherit'}/>
+                    </div>
+                    <div className={'w-2/3 h-[200px] flex gap-1 bg-white'}>
                         {
                             selected?.images.map((image, index) => (
-                                <SwiperSlide key={index}>
+                                <div className={`w-1/4 p-2 my-2 mx-2 rounded-lg transition ${index === activeSlideInside ? 'border border-primary' : ''}`} key={index}>
                                     <img
                                         src={image}
                                         alt={`${selected?.title}-${index}`}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition"
+                                        className={`w-full h-full object-cover group-hover:scale-105`}
                                     />
-                                </SwiperSlide>
+                                </div>
                             ))
                         }
+                    </div>
 
-                    </Swiper>
-                    <NavigateNextIcon className={'swiper-button-next-custom !text-5xl'} color={'inherit'}/>
                 </div>
             </Backdrop>
         </div>
