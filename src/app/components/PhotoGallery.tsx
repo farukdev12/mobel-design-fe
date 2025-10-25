@@ -129,7 +129,7 @@ export default function Gallery() {
                         </Swiper>
                         <NavigateNextIcon className={'swiper-button-next-custom !text-5xl'} color={'inherit'}/>
                     </div>
-                    <div className={'w-2/3 h-[200px] flex gap-1 bg-white'}>
+                    <div className={'w-2/3 h-[200px] flex justify-center gap-1 bg-white'}>
                         {
                             selected?.images.map((image, index) => (
                                 <div className={`w-1/4 p-2 my-2 mx-2 rounded-lg transition ${index === activeSlideInside ? 'border border-primary' : ''}`} key={index}>
