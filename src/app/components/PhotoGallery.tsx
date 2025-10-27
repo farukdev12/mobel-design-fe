@@ -8,58 +8,25 @@ import X from '@mui/icons-material/Close';
 import { Navigation} from "swiper/modules";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { galleryItems } from "@/constants/GalleryItems"
 
-interface Product {
+export interface Product {
     id: number;
     title: string;
     cover: string;
     images: string[];
 }
 
-const products: Product[] = [
-    {
-        id: 1,
-        title: "El Yapımı Seramik Kupa",
-        cover: "/images/landing-slider1.jpg",
-        images: [
-            "/images/landing-slider2.jpg",
-            "/images/landing-slider3.jpg",
-            "/images/landing-slider1.jpg"
-        ],
-    },
-    {
-        id: 2,
-        title: "Ahşap Masa Lambası",
-        cover: "/images/landing-slider2.jpg",
-        images: [
-            "/images/landing-slider1.jpg",
-            "/images/landing-slider3.jpg",
-            "/images/landing-slider2.jpg"
-        ],
-    },
-    {
-        id: 3,
-        title: "Ahşap Masa Lambası",
-        cover: "/images/landing-slider2.jpg",
-        images: [
-            "/images/landing-slider1.jpg",
-            "/images/landing-slider3.jpg",
-            "/images/landing-slider2.jpg"
-        ],
-    },
-    {
-        id: 4,
-        title: "Ahşap Masa Lambası",
-        cover: "/images/landing-slider2.jpg",
-        images: [
-            "/images/landing-slider1.jpg",
-            "/images/landing-slider3.jpg",
-            "/images/landing-slider2.jpg"
-        ],
-    },
-];
 
-export default function Gallery() {
+export interface IPhotoGalleryProps {
+    products: Array<Product>;
+}
+
+const Gallery:React.FC<IPhotoGalleryProps> = (
+    {
+        products,
+    }
+) => {
     const [open, setOpen] = useState(false);
     const [selected, setSelected] = useState<Product | null>(null);
     const [activeSlideInside, setActiveSlideInside] = useState(0)
@@ -117,11 +84,13 @@ export default function Gallery() {
                             {
                                 selected?.images.map((image, index) => (
                                     <SwiperSlide key={index}>
-                                        <img
-                                            src={image}
-                                            alt={`${selected?.title}-${index}`}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition"
-                                        />
+                                        <div className={'w-full h-full flex items-center justify-center bg-white py-3'}>
+                                            <img
+                                                src={image}
+                                                alt={`${selected?.title}-${index}`}
+                                                className="w-full h-full object-contain group-hover:scale-105 transition"
+                                            />
+                                        </div>
                                     </SwiperSlide>
                                 ))
                             }
@@ -148,3 +117,5 @@ export default function Gallery() {
         </div>
     );
 }
+
+export default Gallery;
