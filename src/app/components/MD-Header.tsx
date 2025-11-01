@@ -23,15 +23,15 @@ const MdHeader = () => {
             content:
                 <div className={`flex w-full justify-between items-start container mx-auto px-4 ${open ? 'text-white' : 'text-transparent'}`}>
                     <div className={'flex flex-col py-6'}>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Butik Urunler</Link>
+                        <Link href={'/'} className={'text-xl text-primary-header'}>Butik Ürünler</Link>
                         <p className={'text-sm text-primary-text w-1/2'}>Özenle tasarlanmış, sınırlı sayıda üretilen özel koleksiyon parçalar. Yaşam alanınıza karakter ve özgünlük katacak benzersiz mobilyalar.</p>
                     </div>
                     <div className={'flex flex-col py-6'}>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Ozel Olcu Urunler</Link>
+                        <Link href={'/'} className={'text-xl text-primary-header'}>Özel Ölçü Ürünler</Link>
                         <p className={'text-sm text-primary-text w-1/2'}>Mekânınıza ve ihtiyaçlarınıza tam uyum sağlayan, size özel ölçülerde üretilen mobilyalar. Hayalinizdeki tasarım, tam istediğiniz gibi.</p>
                     </div>
                     <div className={'flex flex-col py-6'}>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Kurumsal Cozumler</Link>
+                        <Link href={'/corporate-solutions'} className={'text-xl text-primary-header'}>Kurumsal Cözümler</Link>
                         <p className={'text-sm text-primary-text w-1/2'}>Ofisler, oteller ve ticari alanlar için fonksiyonel ve estetik özel mobilya projeleri. Markanıza özgü, profesyonel ve bütünsel tasarım hizmeti.</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const MdHeader = () => {
                         </div>
                         <div className={'border-r border-dashed h-full text-primary-header border-primary-header flex flex-col items-center justify-center'}>
                             <LocalShippingIcon color={'inherit'} className={'!text-4xl'} />
-                            <span className={'text-xs'}>Siparis Ver</span>
+                            <span className={'text-xs'}>Sipariş Ver</span>
                         </div>
                         <div className={'flex flex-col items-center h-full text-primary-header justify-center'}>
                             <MapsHomeWorkIcon color={'inherit'} className={'!text-4xl'} />
@@ -61,7 +61,7 @@ const MdHeader = () => {
                     </div>
                     <p className={'text-sm text-primary-text w-1/3 py-6'}>Hayalinizdeki mobilyayı birkaç adımda kişiselleştirin. Ölçülerinizi, tarzınızı ve malzemenizi seçin; dilediğiniz detayları ekleyin. Size özel bir tasarım deneyimiyle, yaşam alanınıza en uygun ürünü oluşturun. Tasarımınızı tamamlayın, biz gerisini ustalıkla üretelim.</p>
                     <div className={'h-full w-1/4 flex justify-center items-end pb-10'}>
-                        <Button variant={'contained'} fullWidth color={'primary'}>Hemen Basla</Button>
+                        <Button variant={'contained'} fullWidth color={'primary'}>Hemen Başla</Button>
                     </div>
 
                 </div>
@@ -72,10 +72,10 @@ const MdHeader = () => {
             content:
                 <div className={`flex w-full justify-between items-start container mx-auto px-4 ${open ? 'text-white' : 'text-transparent'}`}>
                     <div className={'flex flex-col gap-2 py-6'}>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Hakkimizda</Link>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Referanslar</Link>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Kurumsal Cozumler</Link>
-                        <Link href={'/'} className={'text-xl text-primary-header'}>Iletisim</Link>
+                        <Link href={'/about-us'} className={'text-xl text-primary-header'}>Hakkımızda</Link>
+                        <Link href={'/reference-products'} className={'text-xl text-primary-header'}>Referanslar</Link>
+                        <Link href={'/corporate-solutions'} className={'text-xl text-primary-header'}>Kurumsal Çözümler</Link>
+                        <Link href={'/contact'} className={'text-xl text-primary-header'}>İletişim</Link>
                     </div>
                     <p className={'text-sm text-primary-text w-1/3 py-6'}>1980’den bu yana mobilya sektöründe faaliyet gösteren firmamız, özel ölçü ve butik tasarımlarda uzmanlaşmıştır. Yılların kazandırdığı deneyimle, hem bireysel hem de kurumsal birçok prestijli projeye imza attık. Kaliteli malzeme ve özenli işçilikten ödün vermeden, her müşterimizin hayalindeki mekâna uygun çözümler üretiyoruz. Güvenilirliğimiz ve titiz yaklaşımımızla, yaşam alanlarınıza değer katmaya devam ediyoruz.</p>
                 </div>
@@ -107,7 +107,9 @@ const MdHeader = () => {
                 }
             </div>
             <div className={'w-full !h-[84px] bg-secondary-back !text-primary-header container mx-auto px-4 flex items-center justify-between'}>
-                <Image src={brandLogo} width={150} alt={'logo'}/>
+                <Link href={'/'}>
+                    <Image src={brandLogo} width={150} alt={'logo'}/>
+                </Link>
                 <div className={'h-full relative flex justify-between items-center duration-100 w-2/4 !text-primary-header'}>
                     <div className={`absolute ${open ? 'block' : 'hidden'} h-1/2 duration-200 bg-secondary rounded-lg z-[1]`}
                          style={{width: `${referanceWidthForMenuItems}px`, left: `${itemLeftPosition}px`}}></div>
@@ -123,7 +125,7 @@ const MdHeader = () => {
                         href={'/'}
                         className={`text-xl font-medium h-[84px] flex items-center justify-center ${activeMenu === 1 && 'text-white z-[3]'}`}
                     >
-                        Urunler
+                        Ürünler
                     </Link>
                     <Link
                         onMouseEnter={(e) => handleOpenMenu(e, true, 2)}
@@ -137,7 +139,7 @@ const MdHeader = () => {
                         href={'/'}
                         className={`text-xl font-medium h-[84px] flex items-center justify-center ${activeMenu === 3 && 'text-white z-[3]'}`}
                     >
-                        Hakkimizda
+                        Hakkımızda
                     </Link>
                 </div>
                 <div className={'w-1/4 flex items-center justify-end gap-5'}>

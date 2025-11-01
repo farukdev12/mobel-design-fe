@@ -20,8 +20,21 @@ const BoutiqueProducts = () => {
                     pauseOnMouseEnter: false,
                     disableOnInteraction: false,
                 }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
                 spaceBetween={50}
-                slidesPerView={4}
                 navigation={{enabled: true, nextEl: '.swiper-button-next-custom', prevEl: '.swiper-button-prev-custom'}}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}

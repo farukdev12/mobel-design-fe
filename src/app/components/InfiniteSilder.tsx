@@ -26,12 +26,25 @@ export default function InfiniteSilder() {
         <div className="w-full py-8 overflow-hidden">
             <Swiper
                 modules={[Autoplay]}
-                slidesPerView={3}
                 loop={true}
                 speed={5000}
                 autoplay={{
                     delay: 0,
                     disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
                 }}
                 allowTouchMove={false}
                 className="brand-swiper"
