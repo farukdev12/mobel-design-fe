@@ -36,7 +36,6 @@ const MdInput:React.FC<ICFInputProps> = (
         value,
         onChange,
         error,
-        errorText,
         customClass,
         placeholder,
         background = 'gray',
@@ -47,7 +46,6 @@ const MdInput:React.FC<ICFInputProps> = (
         onBlur,
         type,
         characterLimit,
-        allowedType = 'allAllowed',
         optional = true,
         disabled,
         endAdornment

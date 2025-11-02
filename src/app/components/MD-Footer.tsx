@@ -2,14 +2,10 @@
 import React from 'react';
 import brandLogo from '@images/brand-logo.svg'
 import Image from "next/image";
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 // import TwitterIcon from '@mui/icons-material/Twitter';
-import XIcon from '@mui/icons-material/X';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LanguageIcon from '@mui/icons-material/Language';
 import Link from "next/link";
 import useWindowSize from "@/hooks/useWindowSize";
 import Accordion from "@mui/material/Accordion";
@@ -22,7 +18,6 @@ export interface IFooterProps {
 
 const MDFooter: React.FC<IFooterProps> = (
     {
-        mode = 'dark',
     }
 ) => {
     const { width } = useWindowSize();

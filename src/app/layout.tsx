@@ -1,5 +1,4 @@
 'use client'
-import type { Metadata } from "next";
 import {ThemeProvider} from "@mui/system";
 import './globals.css';
 import theme from '../theme';

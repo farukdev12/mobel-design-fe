@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Button, {ButtonPropsColorOverrides} from '@mui/material/Button';
+import Button from '@mui/material/Button';
 import { type ButtonProps } from "@mui/material";
 import {Montserrat} from "next/font/google";
 

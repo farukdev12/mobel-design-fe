@@ -9,9 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import MDButton from "@/app/components/MD-Button";
-import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
-import LoginIcon from "@mui/icons-material/Login";
 
 const ResponsiveHeader = () => {
 

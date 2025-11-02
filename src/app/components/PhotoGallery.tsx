@@ -8,7 +8,6 @@ import X from '@mui/icons-material/Close';
 import { Navigation} from "swiper/modules";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { galleryItems } from "@/constants/GalleryItems"
 
 export interface Product {
     id: number;

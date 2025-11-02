@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 
 export interface IProductCard {
-    image: any;
+    image: unknown;
     productName: string;
     productDescription: string;
     price: number;

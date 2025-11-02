@@ -2,7 +2,6 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation} from "swiper/modules";
-import Image from "next/image";
 import product1 from "@images/product-exam2.png";
 import product2 from "@images/product-exam-3.png";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
