@@ -83,7 +83,7 @@ const MdHeader = () => {
         }
     ]
 
-    const handleOpenMenu = (_, hasSubMenu: boolean, id: number) => {
+    const handleOpenMenu = (_: unknown, hasSubMenu: boolean, id: number) => {
         if (hasSubMenu) {
             setOpen(true);
         } else {
