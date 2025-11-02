@@ -21,7 +21,10 @@ export default function RootLayout({
 
                   width <= 1100 ? (<ResponsiveHeader />) : (<MDHeader />)
               }
-              {children}
+              <div className={'w-full h-auto'}>
+                  {children}
+              </div>
+
               <MDFooter />
           </ThemeProvider>
       </body>

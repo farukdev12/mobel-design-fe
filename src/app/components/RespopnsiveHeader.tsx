@@ -85,62 +85,21 @@ const ResponsiveHeader = () => {
                                             }
                                         }}
                                     >
-                                        <span>Hakkımızda</span>
+                                        <span>Ürünler</span>
                                     </AccordionSummary>
                                     <AccordionDetails className={'!pl-0'}>
                                         <ul className={'flex flex-col gap-1 text-white'}>
                                             <li className={'text-xl font-light opacity-65'}>
                                                 <span className={'text-base text-white'}
-                                                      onClick={() => handleRoute('/about#main-subjects')}>Girişimcilik Ekosistemi</span>
+                                                      onClick={() => handleRoute('/')}>Butik Ürünler</span>
                                             </li>
                                             <li className={'text-xl font-light opacity-65'}>
                                                 <span className={'text-base text-white'}
-                                                      onClick={() => handleRoute('/about#our-services')}>StartupCentrum Kitle Fonlama Platformu</span>
+                                                      onClick={() => handleRoute('/about#our-services')}>Özel Ölçü Ürünler</span>
                                             </li>
                                             <li className={'text-xl font-light opacity-65'}>
                                                 <span className={'text-base text-white'}
-                                                      onClick={() => handleRoute('/about#our-services')}>StartupCentrum Alpha GSYF</span>
-                                            </li>
-                                            <li className={'text-xl font-light opacity-65'}>
-                                                <span className={'text-base text-white'}
-                                                      onClick={() => handleRoute('/about#our-services')}>StartupCentrum Melek Yatırım Ağı</span>
-                                            </li>
-                                        </ul>
-                                    </AccordionDetails>
-                                </Accordion>
-                            </li>
-                            <li>
-                                <Accordion className={'!bg-transparent !shadow-none !border-t-0'}>
-                                    <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon color={'inherit'}/>}
-                                        aria-controls="panel1-content"
-                                        id="panel1-header"
-                                        className={'!shadow-none !border-t-0 !text-white !px-0 text-xl !justify-start'}
-                                        sx={{
-                                            '& .MuiAccordionSummary-expandIconWrapper': {
-                                                color: 'white',
-                                            },
-                                            '& .MuiAccordionSummary-content': {
-                                                margin: 0,
-                                                maxWidth: 'fit-content',
-                                            }
-                                        }}
-                                    >
-                                        <span>Nasıl Çalışır?</span>
-                                    </AccordionSummary>
-                                    <AccordionDetails className={'!pl-0'}>
-                                        <ul className={'flex flex-col gap-1 text-white'}>
-                                            <li className={'text-xl font-light opacity-65'}>
-                                            <span className={'text-base text-white'}
-                                                  onClick={() => handleRoute('/how-it-works')}>Yatırımcı</span>
-                                            </li>
-                                            <li className={'text-xl font-light opacity-65'}>
-                                            <span className={'text-base text-white'}
-                                                  onClick={() => handleRoute('/how-it-works')}>Girişimci</span>
-                                            </li>
-                                            <li className={'text-xl font-light opacity-65'}>
-                                            <span className={'text-base text-white'}
-                                                  onClick={() => handleRoute('/how-it-works')}>Nasıl Daha Fazla Kişiye Ulaşabilirsiniz?</span>
+                                                      onClick={() => handleRoute('/corporate-solutions')}>Kurumsal Cözümler</span>
                                             </li>
                                         </ul>
                                     </AccordionDetails>
@@ -148,7 +107,7 @@ const ResponsiveHeader = () => {
                             </li>
                             <li className={'!h-[48px] flex flex-col justify-center'}>
                                 <span className={'text-xl text-white'}
-                                      onClick={() => handleRoute('/dictionary')}>Sözlük</span>
+                                      onClick={() => handleRoute('/')}>Kendin Tasarla</span>
                             </li>
                             <li>
                                 <Accordion className={'!bg-transparent !shadow-none !border-t-0'}>
@@ -167,17 +126,25 @@ const ResponsiveHeader = () => {
                                             }
                                         }}
                                     >
-                                        <span>SSS</span>
+                                        <span>Hakkımızda</span>
                                     </AccordionSummary>
                                     <AccordionDetails className={'!pl-0'}>
                                         <ul className={'flex flex-col gap-1 text-white'}>
                                             <li className={'text-xl font-light opacity-65'}>
                                             <span className={'text-base text-white'}
-                                                  onClick={() => handleRoute('/faq')}>Yatırımcı</span>
+                                                  onClick={() => handleRoute('/about-us')}>Hakkımızda</span>
                                             </li>
                                             <li className={'text-xl font-light opacity-65'}>
                                             <span className={'text-base text-white'}
-                                                  onClick={() => handleRoute('/faq/entrepreneur')}>Girişimci</span>
+                                                  onClick={() => handleRoute('/reference-products')}>Referanslar</span>
+                                            </li>
+                                            <li className={'text-xl font-light opacity-65'}>
+                                            <span className={'text-base text-white'}
+                                                  onClick={() => handleRoute('/corporate-solutions')}>Kurumsal Çözümler</span>
+                                            </li>
+                                            <li className={'text-xl font-light opacity-65'}>
+                                            <span className={'text-base text-white'}
+                                                  onClick={() => handleRoute('/contact')}>İletişim</span>
                                             </li>
                                         </ul>
                                     </AccordionDetails>
@@ -185,7 +152,6 @@ const ResponsiveHeader = () => {
                             </li>
                         </ul>
                     </div>
-                    <MDButton fullWidth className={'mt-auto'} isLinearBg={true} text={'Yatırım Yap'} onClick={() => handleRoute('/')}/>
                 </div>
             </div>
             <div

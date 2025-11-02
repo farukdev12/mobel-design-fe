@@ -36,7 +36,7 @@ const WelcomeSection = () => {
                         <Image src={Slider1} fill className="object-cover" alt="landing-slider-1" />
                         <div className={'absolute top-0 left-0 right-0 bottom-0 bg-black/50 text-white flex flex-col items-center justify-center justify-center gap-10'}>
                             <h1 className={'text-3xl text-white'}>Lorem ipsum dolor sit.</h1>
-                            <p className={'text-sm font-light w-1/2 text-center'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis laborum nisi quae repellendus voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,</p>
+                            <p className={'text-sm font-light md:w-1/2 w-full md:px-0 px-5 text-center'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis laborum nisi quae repellendus voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -46,7 +46,7 @@ const WelcomeSection = () => {
                         <div
                             className={'absolute top-0 left-0 right-0 bottom-0 bg-black/50 text-white flex flex-col items-center justify-center justify-center gap-10'}>
                             <h1 className={'text-3xl text-white'}>Lorem ipsum dolor sit.</h1>
-                            <p className={'text-sm font-light w-1/2 text-center'}>Lorem ipsum dolor sit amet,
+                            <p className={'text-sm font-light md:w-1/2 w-full md:px-0 px-5 text-center'}>Lorem ipsum dolor sit amet,
                                 consectetur adipisicing elit. Aspernatur debitis laborum nisi quae repellendus voluptas?
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,</p>
                         </div>
@@ -58,17 +58,13 @@ const WelcomeSection = () => {
                         <div
                             className={'absolute top-0 left-0 right-0 bottom-0 bg-black/50 text-white flex flex-col items-center justify-center justify-center gap-10'}>
                             <h1 className={'text-3xl text-white'}>Lorem ipsum dolor sit.</h1>
-                            <p className={'text-sm font-light w-1/2 text-center'}>Lorem ipsum dolor sit amet,
+                            <p className={'text-sm font-light md:w-1/2 w-full md:px-0 px-5 text-center'}>Lorem ipsum dolor sit amet,
                                 consectetur adipisicing elit. Aspernatur debitis laborum nisi quae repellendus voluptas?
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,</p>
                         </div>
                     </div>
                 </SwiperSlide>
             </Swiper>
-            {/*<div className={'flex w-full items-center justify-center text-5xl text-brand-purple'}>*/}
-            {/*    <NavigateBeforeIcon className={'swiper-button-prev-custom'} color={'inherit'} fontSize={'inherit'}/>*/}
-            {/*    <NavigateNextIcon className={'swiper-button-next-custom'} color={'inherit'} fontSize={'inherit'}/>*/}
-            {/*</div>*/}
         </>
     );
 };
