@@ -8,6 +8,7 @@ import X from '@mui/icons-material/Close';
 import { Navigation} from "swiper/modules";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export interface Product {
     id: number;
@@ -29,6 +30,7 @@ const Gallery:React.FC<IPhotoGalleryProps> = (
     const [open, setOpen] = useState(false);
     const [selected, setSelected] = useState<Product | null>(null);
     const [activeSlideInside, setActiveSlideInside] = useState(0)
+    const { width } = useWindowSize();
 
     const handleOpen = (product: Product) => {
         setSelected(product);
@@ -62,14 +64,19 @@ const Gallery:React.FC<IPhotoGalleryProps> = (
                 sx={(theme) => ({color: '#fff', zIndex: theme.zIndex.drawer + 1})}
                 open={open}
             >
-                <div className={'w-full h-full items-center justify-center flex flex-col container mx-auto px-10 relative'}>
-                    <X className={'absolute top-10 -right-2 text-5xl cursor-pointer'} color={'inherit'} onClick={handleClose} />
+                <div className={'w-full h-full items-center justify-center flex flex-col container mx-auto md:px-10 px-5 relative'}>
+                    <X className={'absolute top-20 md:top-10 right-3 md:-right-2 text-5xl cursor-pointer'} color={'inherit'} onClick={handleClose} />
                     <div className={'flex items-center justify-center gap-5 w-full h-1/2'}>
-                        <NavigateBeforeIcon className={'swiper-button-prev-custom !text-5xl'} color={'inherit'} />
+                        {
+                            width > 1024 && (
+                                <NavigateBeforeIcon className={'swiper-button-prev-custom !text-5xl'} color={'inherit'} />
+                            )
+                        }
+
                         <Swiper
                             modules={[Navigation]}
-                            className={'w-2/3 h-full py-10'}
-                            spaceBetween={50}
+                            className={'md:w-2/3 w-full h-full py-10'}
+                            spaceBetween={0}
                             slidesPerView={1}
                             navigation={{
                                 enabled: true,
@@ -95,9 +102,14 @@ const Gallery:React.FC<IPhotoGalleryProps> = (
                             }
 
                         </Swiper>
-                        <NavigateNextIcon className={'swiper-button-next-custom !text-5xl'} color={'inherit'}/>
+                        {
+                            width > 1024 && (
+                                <NavigateNextIcon className={'swiper-button-next-custom !text-5xl'} color={'inherit'}/>
+                            )
+                        }
+
                     </div>
-                    <div className={'w-2/3 h-[200px] flex justify-center gap-1 bg-white'}>
+                    <div className={'md:w-2/3 w-full h-[100px] md:h-[200px] flex justify-center gap-1 bg-white'}>
                         {
                             selected?.images.map((image, index) => (
                                 <div className={`w-1/4 p-2 my-2 mx-2 rounded-lg transition ${index === activeSlideInside ? 'border border-primary' : ''}`} key={index}>
