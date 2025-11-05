@@ -12,12 +12,17 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 2,
-        title: "Ahşap Televizyon Ünitesi",
+        title: "Ahşap Televizyon Ünitesi Modelleri",
         cover: "/images/product-group-2/pg-2-1.jpg",
         images: [
             "/images/product-group-2/pg-2-1.jpg",
             "/images/product-group-2/pg-2-2.jpg",
             "/images/product-group-2/pg-2-3.jpg",
+            "/images/product-group-2/pg-2-4.jpg",
+            "/images/product-group-2/pg-2-5.jpg",
+            "/images/product-group-2/pg-2-6.jpg",
+            "/images/product-group-2/pg-2-7.jpg",
+            "/images/product-group-2/pg-2-8.jpg"
         ],
     },
     {
@@ -26,7 +31,11 @@ export const galleryItems: Array<Product> = [
         cover: "/images/product-group-3/pg-3-1.jpg",
         images: [
             "/images/product-group-3/pg-3-1.jpg",
-            "/images/product-group-3/pg-3-2.jpg"
+            "/images/product-group-3/pg-3-2.jpg",
+            "/images/product-group-3/pg-3-3.jpg",
+            "/images/product-group-3/pg-3-4.jpg",
+            "/images/product-group-3/pg-3-5.jpg",
+            "/images/product-group-3/pg-3-6.jpg",
         ],
     },
     {
@@ -42,7 +51,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 5,
-        title: "Lake Televizyon Ünitesi",
+        title: "Ferrari Müşteri Karşılama Salonu Televizyon Ünitesi",
         cover: "/images/product-group-5/pg-5-1.jpg",
         images: [
             "/images/product-group-5/pg-5-1.jpg",
@@ -51,7 +60,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 6,
-        title: "Parfüm Standı",
+        title: "T.C. Milli Saraylar Ürün Standları",
         cover: "/images/product-group-6/pg-6-1.jpg",
         images: [
             "/images/product-group-6/pg-6-1.jpg",
@@ -83,18 +92,18 @@ export const galleryItems: Array<Product> = [
             "/images/product-group-8/pg-8-3.jpg",
         ],
     },
-    {
-        id: 9,
-        title: "Ahşap TV Ünitesi",
-        cover: "/images/product-group-9/pg-9-1.jpg",
-        images: [
-            "/images/product-group-9/pg-9-1.jpg",
-            "/images/product-group-9/pg-9-2.jpg",
-            "/images/product-group-9/pg-9-3.jpg",
-            "/images/product-group-9/pg-9-4.jpg",
-            "/images/product-group-9/pg-9-5.jpg",
-        ],
-    },
+    // {
+    //     id: 9,
+    //     title: "Ahşap TV Ünitesi",
+    //     cover: "/images/product-group-9/pg-9-1.jpg",
+    //     images: [
+    //         "/images/product-group-9/pg-9-1.jpg",
+    //         "/images/product-group-9/pg-9-2.jpg",
+    //         "/images/product-group-9/pg-9-3.jpg",
+    //         "/images/product-group-9/pg-9-4.jpg",
+    //         "/images/product-group-9/pg-9-5.jpg",
+    //     ],
+    // },
     {
         id: 10,
         title: "Mutfak Ve Gömme Vestiyer",
@@ -112,16 +121,18 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 11,
-        title: "Ray Dolap Ve Vestiyer",
+        title: "Sürgü Ray Kapak Dolap Modelleri",
         cover: "/images/product-group-11/pg-11-1.jpg",
         images: [
             "/images/product-group-11/pg-11-1.jpg",
             "/images/product-group-11/pg-11-2.jpg",
+            "/images/product-group-11/pg-11-3.jpg",
+            "/images/product-group-11/pg-11-4.jpg"
         ],
     },
     {
         id: 12,
-        title: "Mermer Desenli Ofis Mobilyaları",
+        title: "Jeep Mağaza Ofis Mobilyaları",
         cover: "/images/product-group-12/pg-12-1.jpg",
         images: [
             "/images/product-group-12/pg-12-1.jpg",
@@ -131,7 +142,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 13,
-        title: "Mini Dolap",
+        title: "Mini Bar Dolabı",
         cover: "/images/product-group-13/gp-13-1.jpg",
         images: [
             "/images/product-group-13/gp-13-1.jpg",
@@ -149,7 +160,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 15,
-        title: "Personel Dinlenme Odası",
+        title: "Ford-Fiat-Volvo Personel Dinlenme Odası",
         cover: "/images/product-group-15/pg-15-1.jpg",
         images: [
             "/images/product-group-15/pg-15-1.jpg",
@@ -161,7 +172,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 16,
-        title: "Personel Dinlenme Odası",
+        title: "Otel Dış Mekan Mobilyaları",
         cover: "/images/product-group-16/pg-16-1.jpg",
         images: [
             "/images/product-group-16/pg-16-1.jpg",
@@ -200,7 +211,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 20,
-        title: "Müşteri Karşılama Bankosu",
+        title: "Lake Led Işıklı Kitaplık",
         cover: "/images/product-group-20/pg-20-1.jpg",
         images: [
             "/images/product-group-20/pg-20-1.jpg",
@@ -209,7 +220,7 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 21,
-        title: "Ahşap Hoparlör",
+        title: "Ahşap Hoparlör Kaplaması",
         cover: "/images/product-group-21/pg-21-1.jpg",
         images: [
             "/images/product-group-21/pg-21-1.jpg",
@@ -219,12 +230,17 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 22,
-        title: "Müşteri Bekleme Salonu",
+        title: "Fiat Satış Mağazaları Müşteri Bekleme Salonu",
         cover: "/images/product-group-22/pg-22-1.jpg",
         images: [
             "/images/product-group-22/pg-22-1.jpg",
             "/images/product-group-22/pg-22-2.jpg",
-            "/images/product-group-22/pg-22-3.jpg"
+            "/images/product-group-22/pg-22-3.jpg",
+            "/images/product-group-22/pg-22-4.jpg",
+            "/images/product-group-22/pg-22-5.jpg",
+            "/images/product-group-22/pg-22-6.jpg",
+            "/images/product-group-22/pg-22-7.jpg",
+            "/images/product-group-22/pg-22-8.jpg"
         ],
     },
     {
@@ -239,11 +255,34 @@ export const galleryItems: Array<Product> = [
     },
     {
         id: 24,
-        title: "Kitaplık",
+        title: "Lake Kitaplık",
         cover: "/images/product-group-24/pg-24-1.jpg",
         images: [
             "/images/product-group-24/pg-24-1.jpg",
             "/images/product-group-24/pg-24-2.jpg",
+        ],
+    },
+    {
+        id: 25,
+        title: "Ahşap Seperator Ve Kitaplık",
+        cover: "/images/product-group-29/pg-29-1.jpg",
+        images: [
+            "/images/product-group-24/pg-29-1.jpg",
+            "/images/product-group-24/pg-29-2.jpg",
+        ],
+    },
+    {
+        id: 26,
+        title: "Orta Sehpa Modelleri",
+        cover: "/images/product-group-30/pg-30-1.jpg",
+        images: [
+            "/images/product-group-24/pg-30-1.jpg",
+            "/images/product-group-24/pg-30-2.jpg",
+            "/images/product-group-24/pg-30-3.jpg",
+            "/images/product-group-24/pg-30-4.jpg",
+            "/images/product-group-24/pg-30-5.jpg",
+            "/images/product-group-24/pg-30-6.jpg",
+            "/images/product-group-24/pg-30-7.jpg"
         ],
     },
 ]

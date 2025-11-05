@@ -2,8 +2,12 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation} from "swiper/modules";
-import product1 from "@images/product-exam2.png";
-import product2 from "@images/product-exam-3.png";
+import product1 from "@images/boutique-product-1.jpg";
+import product2 from "@images/boutique-product-2.jpg";
+import product3 from "@images/boutique-product-3.jpg";
+import product4 from "@images/boutique-product-4.jpg";
+import product5 from "@images/boutique-product-5.jpg";
+import product6 from "@images/boutique-product-6.jpg";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import ProductCard from "@/app/components/ProductCard";
@@ -39,29 +43,29 @@ const BoutiqueProducts = () => {
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product1} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product1} productName={'Ahşap Sehpa'} productDescription={'Online Satış Yakında Hizmetinizde'} price={'0'} />
                 </SwiperSlide>
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product2} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product2} productName={'Orta Sehpa Takımı'} productDescription={'Online Satış Yakında Hizmetinizde'} price={0} />
                 </SwiperSlide>
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product1} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product3} productName={'Ahşap Saksılık'} productDescription={'Online Satış Yakında Hizmetinizde'} price={0} />
                 </SwiperSlide>
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product2} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product4} productName={'Organizer'} productDescription={'Online Satış Yakında Hizmetinizde'} price={0} />
                 </SwiperSlide>
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product1} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product5} productName={'Hasır Sehpa'} productDescription={'Online Satış Yakında Hizmetinizde'} price={0} />
                 </SwiperSlide>
                 <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product2} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
+                    <ProductCard image={product6} productName={'Çift Katlı Organizer'} productDescription={'Online Satış Yakında Hizmetinizde'} price={0} />
                 </SwiperSlide>
-                <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product1} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
-                </SwiperSlide>
-                <SwiperSlide className={'w-full h-full'}>
-                    <ProductCard image={product2} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />
-                </SwiperSlide>
+                {/*<SwiperSlide className={'w-full h-full'}>*/}
+                {/*    <ProductCard image={product1} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />*/}
+                {/*</SwiperSlide>*/}
+                {/*<SwiperSlide className={'w-full h-full'}>*/}
+                {/*    <ProductCard image={product2} productName={'Ornek Urun 1'} productDescription={'Lorem ipsum dolor sit amet.'} price={300} />*/}
+                {/*</SwiperSlide>*/}
 
             </Swiper>
             <div className={'flex w-full items-center justify-center text-5xl text-secondary'}>

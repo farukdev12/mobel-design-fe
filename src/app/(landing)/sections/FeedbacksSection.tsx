@@ -9,35 +9,25 @@ const FeedbacksSection = () => {
                 <div className={'flex flex-col gap-5'}>
                     <div className={'flex items-center gap-2 justify-center md:justify-start'}>
                         <Avatar alt={'test'}/>
-                        <span className={'text-lg font-semibold'}>Faruk Cakir</span>
+                        <span className={'text-lg font-semibold'}>Barış P.</span>
                     </div>
-                    <p className={'text-sm w-full text-center md:w-4/5'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi ea
-                        illum laborum nemo quidem
-                        vel. Ab asperiores atque beatae debitis deleniti deserunt eligendi et explicabo facere fuga
-                        inventore, nesciunt officia, pariatur, quam recusandae repellat sunt tempore ullam unde
-                        veritatis.</p>
+                    <p className={'text-sm w-full text-center'}>Mutfak dolaplarımızı Mobel yaptı, sonuç tam hayal ettiğimiz gibi oldu. Ne eksik, ne fazla. Ölçüler birebir tuttu, işçilik şahane. Gerçekten güvenilir bir ekip!
+                    </p>
                 </div>
                 <div className={'flex flex-col gap-5 mt-0 md:mt-16'}>
                     <div className={'flex items-center gap-2 justify-center md:justify-start'}>
                         <Avatar alt={'test'}/>
-                        <span className={'text-lg font-semibold'}>Faruk Cakir</span>
+                        <span className={'text-lg font-semibold'}>Burak C. - Diagno Lab.Cihazları</span>
                     </div>
-                    <p className={'text-sm w-full text-center md:w-4/5'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi ea
-                        illum laborum nemo quidem
-                        vel. Ab asperiores atque beatae debitis deleniti deserunt eligendi et explicabo facere fuga
-                        inventore, nesciunt officia, pariatur, quam recusandae repellat sunt tempore ullam unde
-                        veritatis.</p>
+                    <p className={'text-sm w-full text-center'}>Ofis mobilyalarımızı yeniledik, Mobel ekibi baştan sona bizimleydi. Fikir verdiler, çizim yaptılar, zamanında teslim ettiler. Şimdi ofise gelen herkes nereden yaptırdığımızı soruyor.</p>
                 </div>
                 <div className={'flex flex-col gap-5'}>
                     <div className={'flex items-center gap-2 justify-center md:justify-start'}>
                         <Avatar alt={'test'}/>
-                        <span className={'text-lg font-semibold'}>Faruk Cakir</span>
+                        <span className={'text-lg font-semibold'}>Melisa T.</span>
                     </div>
-                    <p className={'text-sm w-full text-center md:w-4/5'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi ea
-                        illum laborum nemo quidem
-                        vel. Ab asperiores atque beatae debitis deleniti deserunt eligendi et explicabo facere fuga
-                        inventore, nesciunt officia, pariatur, quam recusandae repellat sunt tempore ullam unde
-                        veritatis.</p>
+                    <p className={'text-sm w-full text-center'}>“Kendi Tasarla” kısmından TV ünitemi kendim tasarladım. Renk seçmek bile eğlenceliydi. Ürün geldiğinde birebir aynıydı, çok kaliteli.
+                    </p>
                 </div>
             </div>
         </div>
